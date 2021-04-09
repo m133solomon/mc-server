@@ -30,7 +30,7 @@ print("**script**: server has started!")
 time.sleep(10)
 
 print("setting ngrok auth token")
-os.system("./ngrok authtoken 3FAh22dYKVsYz1SuacsUk_5hbtYrPYJd36HdXP87Y9M")
+os.system("ngrok authtoken 3FAh22dYKVsYz1SuacsUk_5hbtYrPYJd36HdXP87Y9M")
 time.sleep(10)
 
 print("**script**: starting ngrok tcp")
