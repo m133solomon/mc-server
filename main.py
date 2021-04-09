@@ -25,9 +25,14 @@ while True:
     result = open('nohup.out', 'r').read().find('Done')
     if result > -1:
         break
-        
+
 print("**script**: server has started!")
 time.sleep(10)
+
+print("setting ngrok auth token")
+os.system("./ngrok authtoken 3FAh22dYKVsYz1SuacsUk_5hbtYrPYJd36HdXP87Y9M")
+time.sleep(10)
+
 print("**script**: starting ngrok tcp")
 os.system('ngrok tcp -region us 25565 &')
 time.sleep(10)
